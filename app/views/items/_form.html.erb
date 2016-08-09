@@ -1,0 +1,11 @@
+
+
+<%= form_for :item, url: items_path do |f| %>
+  Item name: <br />
+  <%= f.text_field :name%> <br /><br />
+  Cost: <br />
+  <%= f.number_field :cost %> <br /><br />   <!--create select drop down button. selection defined in game model -->
+  Total Qty: <br />
+  <%= f.number_field :quantity%> <br /><br />
+  <%= f.submit 'Add' %>
+<%end%>
