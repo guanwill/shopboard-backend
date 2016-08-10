@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'items#index'
 
   namespace :api do
-    resources :items do
+    resources :items, defaults: {format: :json} do
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.
